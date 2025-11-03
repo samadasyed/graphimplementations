@@ -1,7 +1,17 @@
 #include <bits/stdc++.h>
-
 using namespace std; 
 
-int main() {
+class Graph { 
+    private: 
+
+
+    public: 
+};
+
+
+
+
+
+int main() {              
     return 0; 
 }
