@@ -30,6 +30,21 @@ class Graph {
         adjList.resize(vertices);
         isDirected = directed; 
     }
+
+    //Function to add an edge to the graph 
+    //Parameters: src --> source vertex 
+    //dest --> destination vertex
+    void addEdge(int src, int dest) {
+        adjList[src].push_back(dest); //so for undirected and directed we add the destination vertex to the list of the source vertex
+        if (!isDirected) {
+            adjList[dest].push_back(src); //if it's undirected we do the same the other way because it goes both ways.
+        }
+    }
+
+
+
+
+
 };
 
 
