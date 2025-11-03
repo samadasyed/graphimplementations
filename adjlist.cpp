@@ -41,10 +41,16 @@ class Graph {
         }
     }
 
+    void printGraph() {
+        for (int i = 0; i < adjList.size(); i++) { 
+            cout << i << ": "; //this is just printing the vertex and a colon
 
-
-
-
+            for (int j = 0; j < adjList[i].size(); j++) {
+                cout << adjList[i][j] << " -> "; //this is the main body that prints everything out 
+            }
+            cout << "Null" << endl;  //before it goes back to i we want to send a null out to end each list. Not necessary but good. 
+        }
+    }
 };
 
 
